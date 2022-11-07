@@ -37,6 +37,7 @@ public class ArraysConcept {
 //		String[] empNames1 = {"Pramod","Aishwarya"};
 		
 		int [] empIds = new int [4];
+		System.out.println("Length of Array while Initiating : "+empIds.length);
 		empIds[0] = 1;
 		empIds[1] = 2;
 		empIds[2] = 3;
