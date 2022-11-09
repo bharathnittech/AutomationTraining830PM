@@ -19,7 +19,7 @@ public class IfElseConditionalStatements {
 		} else {
 			finalsalary = salary - (salary * 0.4);
 		}
-
+	
 		System.out.println(finalsalary);
 
 	}
