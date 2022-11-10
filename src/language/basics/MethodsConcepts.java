@@ -43,6 +43,7 @@ public class MethodsConcepts {
 
 	}
 
+	//Method to print emp details
 	void printEmpDetails(int empid, String empName, String empSalary) {
 		System.out.println(empid);
 		System.out.println(empName);
@@ -50,12 +51,14 @@ public class MethodsConcepts {
 
 	}
 
+	//Method to print sum of 10 and 20 with return type
 	int sumOfNumbers() {
 		int a = 10;
 		int b = 20;
 		return a + b;
 	}
 
+	//Method to get sum of any 2 numbers
 	int sumOfNumbers(int a, int b) {
 		return a + b;
 	}
