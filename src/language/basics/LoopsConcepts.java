@@ -58,7 +58,9 @@ public class LoopsConcepts {
 //		empNamesArrayList.remove("Amit");
 
 		System.out.println(empNamesArrayList);
+
 		
+//		for eacf
 		for (String value : empNamesArrayList) {
 			System.out.println(value);
 		}
