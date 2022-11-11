@@ -60,8 +60,12 @@ public class LoopsConcepts {
 		System.out.println(empNamesArrayList);
 
 		
-//		for eacf
+//		for each  ==> call each and every value from the list
+		
+		// for ( DataType Variable : Set of Values)
+		
 		for (String value : empNamesArrayList) {
+			
 			System.out.println(value);
 		}
 
