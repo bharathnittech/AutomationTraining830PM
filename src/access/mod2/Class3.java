@@ -1,14 +1,18 @@
 package access.mod2;
 
-import access.mod1.Class1;
+import access.mod1.OuterClass;
 
 // CHILD  extends PARENT
-public class Class3 extends Class1 {
+public class Class3 extends OuterClass {
 
 	public static void main(String[] args) {	
-		Class1 obj = new Class1();
-		System.out.println(obj.name);
-		obj.printName();
+		OuterClass obj = new OuterClass();
+//		System.out.println(obj.name);
+//		obj.printName();
+		
+		System.out.println(obj.getName());
+		obj.printname();
+		obj.changeName("Dhruv");
 	}
 
 }
