@@ -7,8 +7,8 @@ public class NonAccessModifiers {
 	public static void main(String[] args) {
 		//1. static ==> before method, before data  ==> make properties are global properties
 		//2. abstract ==> before method, before class ==> 
-		//3. final
-		//4. synchronized
+		//3. final  ==> before class, before method, before data
+		//4. synchronized  ==> before the method /block ==> 
 	}
 
 }
