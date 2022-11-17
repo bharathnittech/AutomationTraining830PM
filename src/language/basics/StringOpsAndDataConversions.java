@@ -1,5 +1,8 @@
 package language.basics;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class StringOpsAndDataConversions {
 
 	public static void main(String[] args) {
@@ -62,8 +65,70 @@ public class StringOpsAndDataConversions {
 		System.out.println(name1.equalsIgnoreCase(name2));
 		System.out.println(name1.contains(name3));
 
+		//StringBuffer ==> Synchronized
+		//StringBuilder ==> Non-Synchronized
+		
+		//Diff. b/w String and StringBuffer or Builder is ==> String is immutable but other classes are mutable
 
-
+		String text1= "Bharath";
+		text1.concat("Reddy");
+		System.out.println(text1);
+		
+		StringBuffer sbf = new StringBuffer("Bharath");
+		sbf.append("Reddy");
+		System.out.println(sbf);
+		
+		StringBuilder sbd = new StringBuilder("Bharath");
+		sbd.append("Reddy");
+		sbd.reverse();
+		System.out.println(sbd);
+		
+		//Data Conversions
+		String amount = "10000";
+		int bonus = 2000;
+		
+		//String to int
+		int Amount = Integer.parseInt(amount);
+		System.out.println("Final Amount : "+(Amount+bonus));
+		
+		//String to boolean
+		String completedDegree = "true";
+		boolean completedDeg = Boolean.valueOf(completedDegree);
+		if(completedDeg) {
+			System.out.println("Eligible to get Job");
+		}
+		
+		//String to float
+		int price = 1000;
+		String tax = "125.5";
+		double Tax = Double.valueOf(tax);
+		System.out.println("Final Price :"+(price+Tax));
+		
+		//Any format to String
+		int stdCode = 144 ;
+		int ph= 345678;
+		String code = String.valueOf(stdCode);
+		System.out.println(code+ph);
+		
+		//Convert time stamp to String
+		SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy hh:mm:ss");
+		String uniqueId= sdf.format(Calendar.getInstance().getTime());
+		System.out.println(uniqueId);
+		
+		//Type Casting
+		int num = 123;
+		byte numb = (byte) num;
+		System.out.println(numb);
+		
+		double number= (double)num;
+		System.out.println(number);
+		
+		double percentage = 123.54;
+		int perc = (int)percentage;
+		System.out.println(perc);
+		
+		percentage=(double)perc;
+		System.out.println(percentage);
 	}
 
 }
