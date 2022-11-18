@@ -19,7 +19,7 @@ public class FirstSeleniumClass {
 		
 		//4. Close the browser	
 		driver.close();//close current window
-		driver.quit();//close all the windows launched by selenium
+		//driver.quit();//close all the windows launched by selenium
 
 	}
 
