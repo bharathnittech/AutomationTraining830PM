@@ -1,5 +1,6 @@
 package selenium.basics;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,6 +13,7 @@ public class BrowserActions {
 		WebDriver driver=  new ChromeDriver();
 		
 //		2. Maximize the browser window
+		driver.manage().window().setSize(new Dimension(800,400));
 		driver.manage().window().maximize();
 		
 //		3. Delete all browser cookies
